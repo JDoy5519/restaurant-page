@@ -1,0 +1,143 @@
+/*Initial Page Set-Up*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, figure,
+blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+               Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+
+/*Styling*/
+
+body {
+    background-color: #F4EDE4;
+    display: flex;
+    flex-direction: column;
+}
+
+nav:hover {
+    cursor: pointer;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    color:#A56C53;
+    font-weight: 800;
+}
+
+h1 {
+    text-align: center;
+    color: #7B4B3A;
+    font-size: 2.5rem;
+}
+
+h2 {
+    text-align: center;
+    color: #935C4A;
+    font-size: 1.5rem;
+}
+
+#containerDiv , #menuContainerDiv, #contactContainerDiv{
+    background-color: #B4846A;
+    height: 70vh;
+    width: 50vh;
+    margin-top: 25px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#welcomeDiv, #imageDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#D9B48F;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+    color: 	#3C2F23;
+    text-align: center;
+}
+
+#welcomeDiv {
+    font-size: 1.4rem;
+}
+
+#imageDiv {
+    font-size: 1.15rem;
+}
+
+#recommendationDiv, #menuDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#D9B48F;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+    color: 	#3C2F23;
+    font-size: 1.15rem;
+}
+
+img {
+    width: 15vh;
+    height: 15vh;
+}
